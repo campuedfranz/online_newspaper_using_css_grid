@@ -1,0 +1,292 @@
+/* CSS reset */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* header section start */
+.heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.top-left-box{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: #312E2D;
+    color: #F6F6F6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+
+
+    #zorro-quote {
+        font-size: 1rem;
+    }
+
+    #zorro {
+        font-size: .75rem;
+        margin-top: 10px;
+        text-align: end;
+    }
+}
+
+#newspaper-name {
+    font-family: 'DM Serif Display', serif;
+    grid-column-start: 4;
+    grid-column-end: 11;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.top-right-box{
+    background-color: #312E2D;
+    color: #F6F6F6;
+    grid-column-start: 11;
+    grid-column-end: 13;
+    padding: 5px;
+
+    #release-date{
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: .65rem;
+        text-align: center;
+
+    }
+
+    #discount-note{
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+/* header section end */
+
+/* headlines section start */
+.headlines {
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+    padding: 3px;
+    margin: 5px;
+
+    .headline-item{
+        align-self: center;
+        text-align: center;
+    }
+   
+}
+
+/* headlines section end */
+
+/* headline-1 section start */
+.title-1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.headline-content-1 {    
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 5px;
+
+    .one-piece-content{
+        font-weight: bold;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .four-emperor{
+        
+        .yonko{
+            /* reponsive image */
+            width: 100%;
+            height: auto;
+            /* center image */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .yonko-caption{
+            font-weight: 400;
+            text-align: center;
+        }
+    }
+
+  
+}
+
+/* headline-1 section end */
+
+
+
+
+/* Desktop view */
+@media only screen and (min-width: 769px) {
+    /* header section start */
+    .heading{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 5px;
+    }
+
+    .top-left-box{
+        font-family: 'Red Hat Display', sans-serif;
+        background-color: #312E2D;
+        color: #F6F6F6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        padding: 10px;
+
+
+        #zorro-quote {
+            font-size: 1.25rem;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            padding-right: 50%;
+            padding-left: 15%;
+            text-align: center;
+        }
+
+        #zorro {
+            font-size: 1em;
+            margin-top: 10px;
+            text-align: end;
+        }
+    }
+
+    #newspaper-name {
+        font-family: 'DM Serif Display', serif;
+        grid-column-start: 4;
+        grid-column-end: 11;
+        font-size: 7rem;
+        font-weight: bolder;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .top-right-box{
+        background-color: #312E2D;
+        color: #F6F6F6;
+        grid-column-start: 11;
+        grid-column-end: 13;
+        padding: 5px;
+
+        #release-date{
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 1.5rem;
+            text-align: center;
+
+        }
+
+        #discount-note{
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.5rem;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    /* header section end */
+
+    /* headlines section start */
+    .headlines {
+        border-top: solid 2px;
+        border-bottom: solid 2px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.5rem;
+        padding: 8px;
+        margin: 5px;
+
+        .headline-item{
+            align-self: center;
+            text-align: center;
+        }
+    
+    }
+
+    /* headlines section end */
+
+    /* headline-1 section start */
+    .title-1{
+        text-align: center;
+        font-size: 4rem;
+        font-weight: bold;
+        margin: 5px;
+    }
+
+    .headline-content-1 {    
+        font-family: 'Red Hat Display', sans-serif;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .5fr;
+
+        .one-piece-content{
+            font-weight: bold;
+            padding: 10px;
+            text-align: justify;
+            font-size: 1.2rem;
+        }
+
+        .headline-1-container-a{
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        .headline-1-container-b{
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .headline-1-container-c{
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        .headline-1-container-d{
+            padding-top:10 ;
+            grid-column-start: 4;
+            grid-column-end: 10;
+        }
+
+        .four-emperor{
+            
+            .yonko{
+                /* reponsive image */
+                width: 100%;
+                height: auto;
+                padding-top: 10px;
+                /* center image */
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .yonko-caption{
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+
+    
+    }
+
+    /* headline-1 section end */
+
+
+}
