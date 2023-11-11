@@ -225,8 +225,8 @@
 
 }
 
-/* desktop layout min-width 769px */
-@media only screen and (min-width: 769px) {
+/* desktop layout min-width 1024px */
+@media only screen and (min-width: 1024px) {
     .whole-layout {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
